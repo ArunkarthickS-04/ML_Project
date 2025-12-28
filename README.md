@@ -2,7 +2,7 @@
 
 Live Website: https://mlproject-ijbodtrg3qxrhhukeuuxky.streamlit.app/
 GitHub Repo: https://github.com/ArunkarthickS-04/ML_Project
-
+ 
 # ABSTRACT
 This project introduces a smart AI-based laptop recommendation system that helps users select the best laptop based on their personal needs like gaming, office use, student use, or editing and budget. The system uses a Machine Learning model (K-Nearest Neighbors) to find laptops with similar specifications and a Large Language Model (OpenAI GPT) to understand natural language input and generate explanations. The application is deployed online using Streamlit Cloud so users can access it anywhere.
 
