@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 from openai import OpenAI
 
 # ------------------ LOAD ML MODEL & DATA ------------------ #
@@ -8,7 +9,7 @@ model = pickle.load(open("model.pkl", "rb"))
 laptops = pd.read_pickle("laptops.pkl")
 
 # ------------------ SETUP OPENAI CLIENT ------------------ #
-client = OpenAI(api_key="YOUR_OPENAI_API_KEY")  # Paste key here
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) # Paste key here
 
 # ------------------ LLM FUNCTION ------------------ #
 def llm_request(prompt):
@@ -88,3 +89,4 @@ if st.button("Recommend"):
             st.success(llm_explanation(names, usage, budget))
 
 st.caption("Powered by OpenAI GPT + Machine Learning")
+
