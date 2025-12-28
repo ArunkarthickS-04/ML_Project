@@ -1,60 +1,111 @@
-Smart Laptop Recommendation System using Machine Learning
+# Smart Laptop Recommendation System using Machine Learning
 
-A machine learning based laptop recommendation system that helps users choose the best laptop based on budget and performance requirements. The system filters laptops step-by-step similar to e-commerce recommendations and ranks options by price suitability and ratings.
+A machine learning based web application that recommends the best laptops based on budget and performance needs.
 
-PROJECT OBJECTIVE:
-• Recommend the best laptop based on user requirements
-• User inputs: Budget, Usage Type, RAM, Storage
-• Helps decision-making for students, office users and gamers
-• Provides best value within budget range
+The system filters laptops step-by-step and displays best matches similar to e-commerce product recommendations.
 
-METHODOLOGY – MACHINE LEARNING:
-• Features used: price, ram_num, core_num, threads_num
-• StandardScaler used for normalization
-• NearestNeighbors recommendation model
-• Ranking logic: 1) Price closest to budget 2) Higher rating
+---
 
-TECHNOLOGY USED:
-• Python
-• Streamlit for UI
-• Pandas and NumPy for data processing
-• Scikit-learn for machine learning
-• GitHub for version control
+## Project Objective
 
-HOW TO INSTALL AND RUN:
-Install required libraries using:
-pip install pandas numpy scikit-learn streamlit
+To help users find the most suitable laptop based on:
 
-Run the application using:
-streamlit run app.py
-Application will open automatically in the browser.
+• Budget  
+• Usage type (Gaming / Office / Student / Editing / All-rounder)  
+• RAM requirement  
+• Storage requirement  
 
-DATASET INFORMATION:
-Contains laptop details such as:
-• Brand and Model
-• CPU cores and threads
-• RAM and Storage
-• GPU availability
-• Price in ₹ and user rating
+Provides best value suggestions within user budget.
+
+---
+
+## Machine Learning Methodology
+
+Features used:
+
+• price  
+• ram_num  
+• core_num  
+• threads_num  
+
+Data preprocessing:
+
+• StandardScaler applied  
+
+Model:
+
+• NearestNeighbors (KNN-based similarity)  
+
+Ranking logic:
+
+1. Price closest to budget  
+2. Higher rating preferred  
+
+---
+
+## Technology Used
+
+• Python  
+• Pandas  
+• NumPy  
+• Scikit-learn  
+• Streamlit  
+• GitHub  
+
+---
+
+## How to Install & Run
+
+Install requirements:
+
+pip install pandas numpy scikit-learn streamlit  
+
+Run the app:
+
+streamlit run app.py  
+
+The interface will launch in browser automatically.
+
+---
+
+## Dataset Information
+
+Contains laptop specification data including:
+
+• Brand & Model  
+• CPU cores and threads  
+• RAM & Storage  
+• GPU type (if available)  
+• Price (₹)  
+• Rating  
 
 Files included:
-• laptop_cleaned_dataset.csv
-• laptops.pkl
 
-MAIN FEATURES IMPLEMENTED:
-• Real-time budget filtering
-• Step-by-step guided selection
-• Ten usage categories (Gaming / Office / Student / Editing etc.)
-• Shows number of laptops available after each filter
-• Displays top 3 best options matching needs
+• laptop_cleaned_dataset.csv  
+• laptops.pkl  
 
-FUTURE IMPROVEMENTS:
-• Live price fetch from Amazon / Flipkart
-• GPU performance score calculation
-• Deploy to cloud for public access
-• Voice guided recommendation
+---
 
-DEVELOPER DETAILS:
-Name: Arunkarthick S
-Project: Machine Learning Mini Project
-Year: 2025
+## Main Features Implemented
+
+• Real-time filtering after every step  
+• 10 categorized usage options  
+• Displays available laptop count  
+• Shows top 3 best matching laptops  
+• Guided experience like shopping platforms  
+
+---
+
+## Future Enhancements
+
+• Online real-time price update from Flipkart / Amazon  
+• GPU benchmark-based filtering  
+• Cloud deployment for public use  
+• Voice-driven recommendation  
+
+---
+
+## Developer
+
+**Arunkarthick S**  
+Machine Learning Mini Project — 2025  
